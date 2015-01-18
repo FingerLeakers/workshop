@@ -52,7 +52,7 @@ board.on("ready", function() {
       stream.write(JSON.stringify(data)+'\n');
     });
 
-    refLevel.on("data", function() {
+    ref_3V3.on("data", function() {
       refLevel = this.value;
       var outputVoltage = 3.3 / refLevel * uvLevel;
 
